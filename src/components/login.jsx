@@ -74,7 +74,7 @@ const Login = () => {
     <div>
       <Card>
         <CardHeader>
-          <CardTitle>Login</CardTitle>
+          <CardTitle className="text-[#dcc284]">Login</CardTitle>
           <CardDescription>Login into your exisitng acount</CardDescription>
           {error && <Error message={error.message} /> }
         </CardHeader>
@@ -102,7 +102,7 @@ const Login = () => {
         </CardContent>
 
         <CardFooter>
-          <Button onClick = {handleLogin}>
+          <Button onClick = {handleLogin} variant="destructive">
             {loading ? <BeatLoader size={10} color="#e1ba60" /> : "Login"}
           </Button>
         </CardFooter>
