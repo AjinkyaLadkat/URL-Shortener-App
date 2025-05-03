@@ -52,61 +52,66 @@ const LandingPage = () => {
         alt="banner image"
       />
 
-      <Accordion type="multiple" collapsible className="w-3/4 md:px-11">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>What is SlimLink.io?</AccordionTrigger>
-          <AccordionContent>
-            SlimLink.io is a fast, reliable, and free URL shortener that helps
-            you turn long links into sleek, shareable ones.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+<Accordion type="multiple" collapsible className="w-3/4 md:px-11">
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="text-left w-full">
+      What is SlimLink.io?
+    </AccordionTrigger>
+    <AccordionContent>
+      SlimLink.io is a fast, reliable, and free URL shortener that helps
+      you turn long links into sleek, shareable ones.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
-      <Accordion type="multiple" collapsible className="w-3/4 md:px-11">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is SlimLink.io free to use?</AccordionTrigger>
-          <AccordionContent>
-            Absolutely. SlimLink.io is 100% free for individuals and startups.
-            No hidden charges.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+<Accordion type="multiple" collapsible className="w-3/4 md:px-11">
+  <AccordionItem value="item-2">
+    <AccordionTrigger className="text-left w-full">
+      Is SlimLink.io free to use?
+    </AccordionTrigger>
+    <AccordionContent>
+      Absolutely. SlimLink.io is 100% free for individuals and startups.
+      No hidden charges.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
-      <Accordion type="multiple" collapsible className="w-3/4 md:px-11">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>
-            Does SlimLink.io provide analytics for my links?
-          </AccordionTrigger>
-          <AccordionContent>
-            Yes! You will get real-time insights like total clicks,countries and device type
-            — all in your dashboard..
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+<Accordion type="multiple" collapsible className="w-3/4 md:px-11">
+  <AccordionItem value="item-3">
+    <AccordionTrigger className="text-left w-full">
+      Does SlimLink.io provide analytics for my links?
+    </AccordionTrigger>
+    <AccordionContent>
+      Yes! You will get real-time insights like total clicks, countries
+      and device type — all in your dashboard.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
-      <Accordion type="multiple" collapsible className="w-3/4 md:px-11">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>
-            Can I use this for commercial purposes?
-          </AccordionTrigger>
-          <AccordionContent>
-            Yes! Whether you’re sharing links in emails, ads, or social media —
-            SlimLink.io is business-ready.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+<Accordion type="multiple" collapsible className="w-3/4 md:px-11">
+  <AccordionItem value="item-4">
+    <AccordionTrigger className="text-left w-full">
+      Can I use this for commercial purposes?
+    </AccordionTrigger>
+    <AccordionContent>
+      Yes! Whether you’re sharing links in emails, ads, or social media —
+      SlimLink.io is business-ready.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
 
-      <Accordion type="multiple" collapsible className="w-3/4 md:px-11">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>
-            Can I customize the shortened URL?
-          </AccordionTrigger>
-          <AccordionContent>
-            Yes! Logged-in users can create custom aliases like
-            slimlink.io/my-brand instead of random characters.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+<Accordion type="multiple" collapsible className="w-3/4 md:px-11">
+  <AccordionItem value="item-5">
+    <AccordionTrigger className="text-left w-full">
+      Can I customize the shortened URL?
+    </AccordionTrigger>
+    <AccordionContent>
+      Yes! Logged-in users can create custom aliases like
+      slimlink.io/my-brand instead of random characters.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
     </div>
   );
 };
