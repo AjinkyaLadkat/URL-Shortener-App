@@ -49,39 +49,40 @@ const Header = () => {
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
+
               <DropdownMenuContent>
                 <DropdownMenuLabel>
                   {user?.user_metadata?.name}
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
 
-                <DropdownMenuItem className="text-[#e1ba60]">
-                  <Link to="/dashboard" className="flex gap-2">
-                    <LinkIcon />
-
-                    <span>My Links</span>
-                  </Link>
+                <DropdownMenuItem
+                  className="text-[#e1ba60]"
+                  onSelect={() => navigate("/dashboard")} // ✅ closes menu and navigates
+                >
+                  <LinkIcon className="mr-2" />
+                  <span>My Links</span>
                 </DropdownMenuItem>
 
-                <DropdownMenuItem className="text-red-700">
-                  <LogOut></LogOut>
-                  <span
-                    onClick={() => {
-                      fnLogout().then(() => {
-                        fetchUser();
-                        navigate("/");
-                      });
-                    }}
-                  >
-                    Logout
-                  </span>
+                <DropdownMenuItem
+                  className="text-red-700"
+                  onSelect={async () => {
+                    await fnLogout();
+                    fetchUser();
+                    navigate("/");
+                  }}
+                >
+                  <LogOut className="mr-2" />
+                  <span>Logout</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           )}
         </div>
       </nav>
-      {loading && <BarLoader className="mb-4" width={"100%"} color="#912121 " />}
+      {loading && (
+        <BarLoader className="mb-4" width={"100%"} color="#912121 " />
+      )}
     </>
   );
 };
