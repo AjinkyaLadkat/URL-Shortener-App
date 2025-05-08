@@ -121,6 +121,7 @@ const CreateLink = () => {
               onChange={handleChange}
             />
           </div>
+          {/* {error && <Error message={"Custom URL already taken"} />} */}
           {error && <Error message={error.message} />}
 
           {formValues?.longUrl && (
