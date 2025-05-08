@@ -32,7 +32,7 @@ const LinkCard = ({url, fetchUrls}) => {
         <Link to={`/link/${url?.id}`} className='flex flex-col flex-1'>
         <span className='text-3xl font-extrabold hover:underline cursor-pointer '>
             {url?.title}
-        </span>
+        </span> 
 
         <span className='text-2xl font-bold text-[#dcb14c] hover:underline cursor-pointer'>
             https://slimlink.io/{url?.custom_url ? url?.custom_url : url.short_url}

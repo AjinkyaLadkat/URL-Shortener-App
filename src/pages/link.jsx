@@ -121,7 +121,10 @@ const Link = () => {
             <Button
               variant="ghost"
               className="text-red-600"
-              onClick={() => fnDelete()}
+              onClick={async () => {
+                await fnDelete(); // wait for delete to finish
+                navigate("/dashboard"); // then redirect
+              }}
             >
               {loadingDelete ? (
                 <BeatLoader size={5} color="#912121" />
