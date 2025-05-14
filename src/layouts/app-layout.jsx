@@ -22,7 +22,7 @@ const AppLayout = () => {
             </div>
 
             <div className='text-[#e1ba60]'>
-                <a href=""> Github</a>
+                <a href="https://github.com/AjinkyaLadkat"> Github</a>
             </div>
         </div>
     </div>
